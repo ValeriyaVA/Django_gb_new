@@ -1,0 +1,80 @@
+[
+  {
+    "model": "mainapp.news",
+    "pk": 1,
+    "fields": {
+      "title": "News1",
+      "preamble": "Как же я заколебалась подключать бд к проекту",
+      "body": "Я как-то это сделала",
+      "body_as_markdown": false,
+      "created_at": "2022-11-10T12:26:04.896Z",
+      "update_at": "2022-11-10T12:26:04.896Z",
+      "deleted": false
+    }
+  },
+  {
+    "model": "mainapp.news",
+    "pk": 2,
+    "fields": {
+      "title": "Newsmews",
+      "preamble": "как жить эту жизнь",
+      "body": "Как жить эту жизнь, если ты безнадёжно тупой",
+      "body_as_markdown": false,
+      "created_at": "2022-11-10T12:39:38.642Z",
+      "update_at": "2022-11-10T17:49:06.632Z",
+      "deleted": false
+    }
+  },
+  {
+    "model": "mainapp.news",
+    "pk": 3,
+    "fields": {
+      "title": "News3",
+      "preamble": "скоро придут студенты",
+      "body": "а я всё ещё разираюсь с новостями",
+      "body_as_markdown": false,
+      "created_at": "2022-11-10T13:00:59.784Z",
+      "update_at": "2022-11-10T13:00:59.784Z",
+      "deleted": false
+    }
+  },
+  {
+    "model": "mainapp.news",
+    "pk": 5,
+    "fields": {
+      "title": "News5",
+      "preamble": "очередная новость1",
+      "body": "Шок-контент1",
+      "body_as_markdown": false,
+      "created_at": "2022-11-10T13:01:52.208Z",
+      "update_at": "2022-11-10T13:01:52.208Z",
+      "deleted": false
+    }
+  },
+  {
+    "model": "mainapp.news",
+    "pk": 6,
+    "fields": {
+      "title": "News6",
+      "preamble": "очередная новость2",
+      "body": "Шок2",
+      "body_as_markdown": false,
+      "created_at": "2022-11-10T17:44:25.880Z",
+      "update_at": "2022-11-10T17:44:25.880Z",
+      "deleted": false
+    }
+  },
+  {
+    "model": "mainapp.news",
+    "pk": 7,
+    "fields": {
+      "title": "NewMews2",
+      "preamble": "Замурчательные новости",
+      "body": "коты мурлыкают",
+      "body_as_markdown": false,
+      "created_at": "2022-11-10T18:19:06.630Z",
+      "update_at": "2022-11-10T18:19:06.630Z",
+      "deleted": false
+    }
+  }
+]

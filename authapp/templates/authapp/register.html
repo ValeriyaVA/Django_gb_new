@@ -1,0 +1,103 @@
+{% extends 'authapp/base.html' %}
+{% block content %}
+<div class="row justify-content-center my-2">
+    <div class="col-lg-6">
+        <h3>Регистрация нового пользователя</h3>
+        <form method="post" class="mt-2" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div id="div_id_username" class="form-group"><label for="id_username"
+                                                                class=" requiredField">
+                Username</label>
+                <div class=""><input type="text" name="username" maxlength="150"
+                                     class="textinput textInput form-control" required=""
+                                     id="id_username" placeholder="Username"></div>
+            </div>
+
+            <div id="div_id_password1" class="form-group"><label for="id_password1"
+                                                                 class=" requiredField">
+                Password</label>
+                <div class=""><input type="password" name="password1"
+                                     autocomplete="new-password" class="textinput textInput form-control"
+                                     required="" id="id_password1" placeholder="Password"></div>
+            </div>
+            <div id="div_id_password2" class="form-group"><label for="id_password2"
+                                                                 class=" requiredField">
+                Password confirmation<span class="asteriskField">*</span> </label>
+                <div class=""><input type="password" name="password2"
+                                     autocomplete="new-password" class="textinput textInput form-control"
+                                     required="" id="id_password2" placeholder="Password confirm"> <small id="hint_id_password2"
+                                                                           class="form-text text-muted">Enter the same
+                    password as before, for
+                    verification.</small></div>
+            </div>
+            <div id="div_id_first_name" class="form-group"><label for="id_first_name"
+                                                                  class="">
+                First name
+            </label>
+                <div class=""><input type="text" name="first_name" maxlength="150"
+                                     class="textinput textInput form-control" id="id_first_name"
+                                     placeholder="First name"></div>
+            </div>
+            <div id="div_id_last_name" class="form-group"><label for="id_last_name"
+                                                                 class="">
+                Last name
+            </label>
+                <div class=""><input type="text" name="last_name" maxlength="150"
+                                     class="textinput textInput form-control" id="id_last_name" placeholder="Last name">
+                </div>
+            </div>
+            <div id="div_id_age" class="form-group"><label for="id_age" class="">
+                Age
+            </label>
+                <div class=""><input type="number" name="age" min="0"
+                                     class="numberinput form-control" id="id_age" placeholder="age"></div>
+            </div>
+            <div id="div_id_avatar" class="form-group"><label for="id_avatar"
+                                                              class="">
+                Avatar
+            </label>
+                <div class=""><input type="file" name="avatar" accept="image/*"
+                                     class="clearablefileinput form-control-file" id="id_avatar"></div>
+            </div>
+            <div id="div_id_email" class="form-group"><label for="id_email"
+                                                             class=" requiredField">
+                Email address</label>
+                <div class=""><input type="text" name="email" maxlength="256"
+                                     class="textinput textInput form-control" required="" id="id_email"
+                                     placeholder="email adress">
+                </div>
+            </div>
+            <button type="submit"
+                    class="btn btn-primary btn-block">Зарегистрироваться
+            </button>
+        </form>
+        <p>
+        <div class="row justify-content-between">
+            <div class="col">
+                <a href="{% url 'authapp:login' %}">Войти</a>
+            </div>
+            <div class="col">
+                <a href="#">Забыли пароль?</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+{% block js %}
+<script>
+        $(document).ready(function () {
+            {% if messages %}
+                // Toasts
+                $(".toast").toast({ delay: 5000 });
+                $(".toast").toast("show");
+            {% endif %}
+        });
+
+
+
+
+
+
+</script>
+{% endblock %}
